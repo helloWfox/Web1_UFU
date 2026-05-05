@@ -1,0 +1,13 @@
+Programação para Web I — Aula 01
+Respostas aos exercícios em texto
+
+1) O que é a Internet e comunicação em escala global
+A Internet é uma rede de redes: milhões de redes e computadores interconectados por meio de um conjunto padronizado de protocolos (em especial o TCP/IP). Ela permite que dispositivos em qualquer parte do mundo troquem dados em pacotes roteados por vários nós até o destino. Serviços como Web, e-mail e transferência de arquivos usam essa infraestrutura comum, o que viabiliza comunicação e acesso a informação em escala global.
+
+2) Arquitetura cliente-servidor e funcionamento na prática
+Na arquitetura cliente-servidor o papel de fornecer recurso (páginas, arquivos, APIs, etc.) fica com o servidor, que escuta requisições em endereços/portas definidos. O cliente (por exemplo o navegador ou um app) envia pedidos e interpreta as respostas. Na prática, o usuário digita uma URL ou clica em um link; o cliente resolve o endereço, abre conexão HTTP(S) com o servidor, o servidor processa e devolve conteúdo (HTML, imagens, JSON), e o cliente apresenta o resultado.
+
+3) Comparação entre sites estáticos e dinâmicos
+Sites estáticos: o conteúdo está principalmente em arquivos prontos (HTML/CSS/JS); para mudar textos ou páginas em geral é preciso editar arquivos ou publicar novamente. São em geral mais simples, rápidos de servir e com menor carga no servidor, mas pouco adequados quando o conteúdo muda com frequência ou depende de dados de usuários sem uma camada de aplicação.
+
+Sites dinâmicos: o HTML ou os dados são montados em tempo de requisição (linguagem no servidor, CMS, banco de dados). Permitem personalização, buscas, login e atualização frequente sem reenviar todo o site estático, mas costumam exigir mais do servidor e podem ser mais lentos se mal dimensionados, por causa de processamento e consultas a banco.
