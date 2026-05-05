@@ -1,0 +1,8 @@
+# Apenas artefatos locais de extração / notas de trabalho
+extracted_slides.txt
+render_page_*.png
+_extract_pdf.py
+_render_ex_pages.py
+
+# Slides PDF da disciplina (opcional: mantenha localmente; são grandes)
+Aula*.pdf

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercício 10 — Realce vermelho ao passar o mouse</title>
+  <style>
+    table.irrf {
+      width: 100%;
+      max-width: 720px;
+      border-collapse: collapse;
+      border: 1px solid #000;
+      font-family: Arial, sans-serif;
+    }
+    table.irrf th,
+    table.irrf td {
+      border: 1px solid #000;
+      padding: 10px 12px;
+    }
+    table.irrf thead th {
+      background-color: #1e3a5f;
+      color: #fff;
+      text-align: center;
+      font-weight: bold;
+    }
+    table.irrf tbody tr:nth-child(odd) {
+      background-color: #fff;
+    }
+    table.irrf tbody tr:nth-child(even) {
+      background-color: #b8d4f0;
+    }
+    table.irrf tbody tr:hover {
+      background-color: #e53e3e !important;
+      color: #fff;
+    }
+    table.irrf tbody td:first-child {
+      text-align: left;
+    }
+    table.irrf tbody td:nth-child(2),
+    table.irrf tbody td:nth-child(3) {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <p>Exercício 10: mesma tabela do exercício 09, com linhas ficando vermelhas no <em>hover</em>.</p>
+  <table class="irrf">
+    <thead>
+      <tr>
+        <th>Base de cálculo mensal em R$</th>
+        <th>Alíquota %</th>
+        <th>Parcela a deduzir do imposto em R$</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Até 1.903,98</td>
+        <td>—</td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td>De 1.903,99 até 2.826,65</td>
+        <td>7,5</td>
+        <td>142,80</td>
+      </tr>
+      <tr>
+        <td>De 2.826,66 até 3.751,05</td>
+        <td>15,0</td>
+        <td>354,80</td>
+      </tr>
+      <tr>
+        <td>De 3.751,06 até 4.664,68</td>
+        <td>22,5</td>
+        <td>636,13</td>
+      </tr>
+      <tr>
+        <td>Acima de 4.664,68</td>
+        <td>27,5</td>
+        <td>869,36</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
