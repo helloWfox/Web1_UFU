@@ -1,0 +1,12 @@
+.p-sublinhado {
+  text-decoration: underline;
+}
+
+.p-indent {
+  text-decoration: overline;
+  text-indent: 50px;
+}
+
+.p-meio {
+  text-decoration: line-through;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercício 09 — Mapa com polígonos (patos)</title>
+</head>
+<body>
+  <h1>Patos</h1>
+  <p>Clique num pato para abrir a página com informações.</p>
+
+  <map name="mapa-patos">
+    <area
+      shape="poly"
+      coords="20,40,500,40,500,990,20,990"
+      href="patos/pato-1.html"
+      alt="Pato da esquerda">
+    <area
+      shape="poly"
+      coords="518,40,1000,40,1000,990,518,990"
+      href="patos/pato-2.html"
+      alt="Pato do meio">
+    <area
+      shape="poly"
+      coords="1020,40,1518,40,1518,990,1020,990"
+      href="patos/pato-3.html"
+      alt="Pato da direita">
+  </map>
+  <img
+    src="arquivos/patos.png"
+    width="1536"
+    height="1024"
+    alt="Três patos em fila"
+    usemap="#mapa-patos"
+    style="max-width:100%;height:auto;width:auto">
+</body>
+</html>

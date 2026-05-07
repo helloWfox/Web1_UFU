@@ -1,0 +1,23 @@
+.texto-a {
+  background-color: #fff5f5;
+  color: #c53030;
+  font-family: Georgia, serif;
+  font-size: 14pt;
+  padding: 8px;
+}
+
+.texto-b {
+  background-color: #ebf8ff;
+  color: #2b6cb0;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  font-size: 120%;
+  padding: 8px;
+}
+
+.texto-c {
+  background-color: #f0fff4;
+  color: #276749;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.95rem;
+  padding: 8px;
+}

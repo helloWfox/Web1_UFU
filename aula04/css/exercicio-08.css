@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  padding: 16px;
+  background-image: url("../imagens/fundo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+p {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 14px;
+  max-width: 36rem;
+}

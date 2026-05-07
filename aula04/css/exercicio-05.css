@@ -1,0 +1,28 @@
+.caixa-superior {
+  width: 100%;
+  box-sizing: border-box;
+  height: 160px;
+  background-color: orange;
+  border: 6px solid green;
+  color: #fff;
+  padding: 12px;
+}
+
+.caixa-inferior {
+  width: 100%;
+  box-sizing: border-box;
+  height: 160px;
+  margin-top: 12px;
+  background-color: purple;
+  border-top: 6px solid yellow;
+  border-bottom: 6px solid yellow;
+  border-left: 6px solid #5c4033;
+  border-right: 6px solid #5c4033;
+  color: #fff;
+  padding: 12px;
+}
+
+body {
+  margin: 0;
+  padding: 12px;
+}
