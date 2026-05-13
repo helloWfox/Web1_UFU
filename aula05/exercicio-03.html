@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício 03 — Posicionamento Absoluto na Borda Interna</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/exercicio-03.css">
+</head>
+<body>
+  <header class="cabecalho">
+    <h1>Posicionamento Absoluto de Sobreposição Interna</h1>
+    <p>Caixa amarela servindo de base para caixas laranja, verde e vermelha, com a caixa vermelha sobrepondo a divisão interna.</p>
+  </header>
+
+  <main class="area-demonstracao">
+    <div class="caixa-amarela" id="container-amarelo">
+      <div class="caixa-interna caixa-laranja" id="subcaixa-laranja">
+        <span>Laranja</span>
+      </div>
+      <div class="caixa-interna caixa-verde" id="subcaixa-verde">
+        <span>Verde</span>
+      </div>
+      <div class="caixa-interna caixa-vermelha" id="subcaixa-vermelha">
+        <span>Vermelha</span>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

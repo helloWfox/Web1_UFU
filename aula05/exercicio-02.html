@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício 02 — Posicionamento Absoluto em Container</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/exercicio-02.css">
+</head>
+<body>
+  <header class="cabecalho">
+    <h1>Posicionamento Absoluto Interno</h1>
+    <p>Caixa principal verde servindo de base para duas caixas internas posicionadas de forma absoluta.</p>
+  </header>
+
+  <main class="area-demonstracao">
+    <!-- A caixa verde maior atua como referência de posicionamento -->
+    <div class="caixa-verde" id="container-verde">
+      <div class="caixa-interna caixa-vermelha" id="subcaixa-vermelha">
+        <span>Vermelha</span>
+      </div>
+      <div class="caixa-interna caixa-azul" id="subcaixa-azul">
+        <span>Azul</span>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

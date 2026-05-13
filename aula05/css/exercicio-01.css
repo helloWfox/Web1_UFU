@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  padding: 24px;
+  font-family: 'Inter', sans-serif;
+  background-color: #fcfcfc;
+  color: #333;
+}
+
+.cabecalho {
+  margin-bottom: 24px;
+}
+
+.cabecalho h1 {
+  margin: 0 0 8px 0;
+  font-size: 24px;
+  color: #111;
+  font-weight: 600;
+}
+
+.cabecalho p {
+  margin: 0;
+  color: #555;
+  font-size: 15px;
+}
+
+/* Recipiente que delimita o escopo do posicionamento absoluto */
+.recipiente-absoluto {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  height: 440px;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+  overflow: hidden;
+}
+
+/* Estilos em comum para todas as caixas absolutas */
+.caixa {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 18px;
+  color: #ffffff;
+  box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.caixa:hover {
+  transform: translateY(-6px);
+  box-shadow: 6px 14px 24px rgba(0, 0, 0, 0.22);
+}
+
+/* Cores premium e coordenadas específicas */
+.caixa-vermelha {
+  top: 40px;
+  left: 40px;
+  background-color: #e63946; /* Vermelho rico */
+  z-index: 1;
+}
+
+.caixa-verde {
+  top: 100px;
+  left: 100px;
+  background-color: #2a9d8f; /* Verde azulado premium */
+  z-index: 2;
+}
+
+.caixa-azul {
+  top: 160px;
+  left: 160px;
+  background-color: #1d3557; /* Azul profundo elegante */
+  z-index: 3;
+}
