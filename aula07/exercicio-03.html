@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercício 03 — Ocultar e exibir parágrafos</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: sans-serif;
+    }
+
+    .paragrafos p {
+      margin: 0.8rem 0;
+      padding: 0.6rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .botoes {
+      margin-top: 1rem;
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    button {
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Exercício 03 — Ocultar e exibir parágrafos</h1>
+
+  <div class="paragrafos">
+    <p id="p1">Primeiro parágrafo: JavaScript permite manipular o conteúdo da página em tempo real.</p>
+    <p id="p2">Segundo parágrafo: o DOM representa a estrutura do documento HTML no navegador.</p>
+    <p id="p3">Terceiro parágrafo: eventos como cliques em botões disparam funções que alteram a interface.</p>
+  </div>
+
+  <div class="botoes">
+    <button type="button" onclick="ocultarParagrafos()">Ocultar</button>
+    <button type="button" onclick="exibirParagrafos()">Exibir</button>
+  </div>
+
+  <script>
+    const paragrafos = ["p1", "p2", "p3"];
+
+    function ocultarParagrafos() {
+      paragrafos.forEach(function (id) {
+        document.getElementById(id).style.display = "none";
+      });
+    }
+
+    function exibirParagrafos() {
+      paragrafos.forEach(function (id) {
+        document.getElementById(id).style.display = "block";
+      });
+    }
+  </script>
+</body>
+</html>

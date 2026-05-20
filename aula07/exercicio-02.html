@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercício 02 — Adicionar item à lista</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: sans-serif;
+    }
+
+    ul {
+      margin: 1rem 0;
+      padding-left: 1.5rem;
+    }
+
+    button {
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Exercício 02 — Adicionar item à lista</h1>
+
+  <ul id="lista">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+  </ul>
+
+  <button type="button" onclick="adicionarItem()">Adicionar item</button>
+
+  <script>
+    let contador = 4;
+
+    function adicionarItem() {
+      const li = document.createElement("li");
+      li.textContent = "Item " + contador;
+      document.getElementById("lista").appendChild(li);
+      contador++;
+    }
+  </script>
+</body>
+</html>

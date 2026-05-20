@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercício 01 — Alterar cor do parágrafo</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: sans-serif;
+    }
+
+    #texto {
+      font-size: 1.2rem;
+      color: blue;
+    }
+
+    .botoes {
+      margin-top: 1rem;
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    button {
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Exercício 01 — Alterar cor do texto</h1>
+
+  <p id="texto">
+    Este parágrafo começa na cor azul. Use os botões abaixo para alterar a cor do texto.
+  </p>
+
+  <div class="botoes">
+    <button type="button" onclick="alterarVermelho()">Alterar para cor vermelha</button>
+    <button type="button" onclick="alterarAzul()">Alterar para cor azul</button>
+  </div>
+
+  <script>
+    function alterarVermelho() {
+      document.getElementById("texto").style.color = "red";
+    }
+
+    function alterarAzul() {
+      document.getElementById("texto").style.color = "blue";
+    }
+  </script>
+</body>
+</html>
